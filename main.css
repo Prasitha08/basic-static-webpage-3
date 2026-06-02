@@ -1,0 +1,168 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+/* Mobile First */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+section{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-radius:10px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Tablet */
+
+@media (min-width:768px){
+
+    nav{
+        flex-direction:row;
+        justify-content:center;
+    }
+
+    .skills-list{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+}
+
+/* Desktop */
+
+@media (min-width:1025px){
+
+    .container{
+        max-width:1200px;
+    }
+
+    .skills-list{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+/* Dark Mode */
+
+.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode section{
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode footer{
+    background-color: #000;
+}
+
+/* Form Styling */
+
+form input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#message{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Slider Buttons */
+
+#about button{
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
